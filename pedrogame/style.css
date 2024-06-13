@@ -17,8 +17,8 @@ b {
 }
 
 .game {
-    width: 700px;
-    height: 200px;
+    width: 100%;
+    height: 300px;
     border-bottom: 1px solid #000;
     margin: auto;
     background-image: url(../pedrogame/img/backgroun1.png);
@@ -31,26 +31,26 @@ b {
     background-image: url(img/dino.png);
     background-size: 75px 57px;
     position: relative;
-    top: 150px;
+    top: 250px;
 }
 
 #cactus {
     width: 20px;
-    height: 40px;
+    height: 51px;
     background-image: url(img/cactus.png);
-    background-size: 30px 40px;
+    background-size: 30px 49px;
     position: relative;
-    top: 110px;
-    left: 580px;
+    top: 199px;
+    left: 1400px;
 }
 
 .move {
-    animation: cactusMov 2s infinite linear;
+    animation: cactusMov 1.7s infinite linear;
 }
 
 @keyframes cactusMov {
     0% {
-        left: 580px;
+        left: 1400px;
     }
 
     100% {
@@ -64,23 +64,23 @@ b {
 
 @keyframes jump {
     0% {
-        top: 150px;
+        top: 160px;
     }
 
     25% {
-        top: 120px;
+        top: 130px;
     }
 
     50% {
-        top: 90px;
+        top: 110px;
     }
 
     75% {
-        top: 120px;
+        top: 150px;
     }
 
     100% {
-        top: 150px;
+        top: 160px;
     }
 }
 
