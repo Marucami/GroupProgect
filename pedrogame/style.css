@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.score-box {
+    margin: 20px auto 0;
+    padding-top: 30px;
+    width: 600px;
+    height: 100px;
+    text-align: center;
+}
+
+b {
+    font-size: 32px;
+}
+
+.game {
+    width: 700px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+    background-image: url(../pedrogame/img/backgroun1.png);
+    background-size: contain;
+}
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/dino.png);
+    background-size: 75px 57px;
+    position: relative;
+    top: 150px;
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(img/cactus.png);
+    background-size: 30px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+}
+
+.move {
+    animation: cactusMov 2s infinite linear;
+}
+
+@keyframes cactusMov {
+    0% {
+        left: 580px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump .5s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    25% {
+        top: 120px;
+    }
+
+    50% {
+        top: 90px;
+    }
+
+    75% {
+        top: 120px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+
+.note {
+    margin: 20px auto 0;
+    padding-top: 30px;
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.space {
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#btn {
+    width: 200px;
+    height: 50px;
+    margin-top: 50px;
+    outline: none;
+}
