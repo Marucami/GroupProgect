@@ -38,10 +38,10 @@ b {
     width: 20px;
     height: 51px;
     background-image: url(img/cactus.png);
-    background-size: 30px 49px;
+    background-size: 28px 48px;
     position: relative;
     top: 199px;
-    left: 1400px;
+    left: 900px;
 }
 
 .move {
@@ -50,7 +50,7 @@ b {
 
 @keyframes cactusMov {
     0% {
-        left: 1400px;
+        left: 900px;
     }
 
     100% {
