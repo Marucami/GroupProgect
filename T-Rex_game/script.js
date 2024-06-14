@@ -1,8 +1,8 @@
-export const dino = document.getElementById("dino");
-export const cactus = document.getElementById("cactus");
-export const btn = document.getElementById("btn");
-export const score = document.getElementById("score");
-export const latestScore = document.getElementById("latest");
+const dino = document.getElementById("dino");
+const cactus = document.getElementById("cactus");
+const btn = document.getElementById("btn");
+const score = document.getElementById("score");
+const latestScore = document.getElementById("latest");
 let counter = 0;
 
 document.addEventListener("keydown", function(event) {
@@ -20,7 +20,7 @@ export function jump () {
     }, 500)
 }
 
-export let isAlive = setInterval(function() {
+let isAlive = setInterval(function() {
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
     
