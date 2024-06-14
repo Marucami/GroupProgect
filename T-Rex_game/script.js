@@ -1,8 +1,8 @@
-const dino = document.getElementById("dino");
-const cactus = document.getElementById("cactus");
-const btn = document.getElementById("btn");
-const score = document.getElementById("score");
-const latestScore = document.getElementById("latest");
+export const dino = document.getElementById("dino");
+export const cactus = document.getElementById("cactus");
+export const btn = document.getElementById("btn");
+export const score = document.getElementById("score");
+export const latestScore = document.getElementById("latest");
 let counter = 0;
 
 document.addEventListener("keydown", function(event) {
@@ -11,7 +11,7 @@ document.addEventListener("keydown", function(event) {
     }
 })
 
-function jump () {
+export function jump () {
     if (dino.classList != "jump") {
         dino.classList.add("jump");
     }
@@ -20,7 +20,7 @@ function jump () {
     }, 500)
 }
 
-let isAlive = setInterval(function() {
+export let isAlive = setInterval(function() {
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
     
@@ -42,7 +42,7 @@ btn.addEventListener("keydown", function(event) {
     event.preventDefault();
 })
 
-function stopGame() {
+export function stopGame() {
     if (cactus.classList == "move") {
         cactus.classList.remove("move");
         btn.innerText = "Start";

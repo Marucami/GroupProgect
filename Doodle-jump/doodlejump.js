@@ -138,7 +138,7 @@ function moveDoodler(e) {
     }
 }
 
-function placePlatforms() {
+export function placePlatforms() {
     platformArray = [];
 
     let platform = {
@@ -166,7 +166,7 @@ function placePlatforms() {
     }
 }
 
-function newPlatform() {
+export function newPlatform() {
     let randomX = Math.floor(Math.random() * boardWidth*3/4); 
     let platform = {
         img : platformImg,
@@ -179,14 +179,14 @@ function newPlatform() {
     platformArray.push(platform);
 }
 
-function detectCollision(a, b) {
+export function detectCollision(a, b) {
     return a.x < b.x + b.width &&   
            a.x + a.width > b.x &&   
            a.y < b.y + b.height &&  
            a.y + a.height > b.y;    
 }
 
-function updateScore() {
+export function updateScore() {
     let points = Math.floor(50*Math.random()); 
     if (velocityY < 0) { 
         maxScore += points;
