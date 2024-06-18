@@ -1,7 +1,5 @@
 export {};
 import assert from 'assert';
-import { beforeEach, describe, it, jest } from 'jest';
-import { jump, stopGame } from "../T-Rex_game/script.js";
 
 describe("Dino game tests", () => {
   beforeEach(() => {
