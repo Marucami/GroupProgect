@@ -86,7 +86,7 @@ import {
         expect(maxScore).toBeGreaterThan(0);
       });
     
-      it("количесво очков не увеличивается, когда doodler падает", () => {
+      it("количество очков не увеличивается, когда doodler падает", () => {
         score = 0;
         velocityY = 5;
         updateScore();
