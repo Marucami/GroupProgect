@@ -11,7 +11,7 @@ document.addEventListener("keydown", function(event) {
     }
 })
 
-export function jump () {
+function jump () {
     if (dino.classList != "jump") {
         dino.classList.add("jump");
     }
@@ -42,7 +42,7 @@ btn.addEventListener("keydown", function(event) {
     event.preventDefault();
 })
 
-export function stopGame() {
+function stopGame() {
     if (cactus.classList == "move") {
         cactus.classList.remove("move");
         btn.innerText = "Start";
