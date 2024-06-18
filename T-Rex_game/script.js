@@ -9,7 +9,7 @@ document.addEventListener("keydown", function(event) {
     if (event.keyCode === 0 || event.keyCode === 32) {
         jump();
     }
-})
+});
 
 function jump () {
     if (dino.classList != "jump") {
@@ -17,13 +17,14 @@ function jump () {
     }
     setTimeout(function() {
         dino.classList.remove("jump");
-    }, 500)
+    }, 500);
 }
+global.jump = jump; 
 
 let isAlive = setInterval(function() {
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
-    
+
     if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 240) {
         alert("Потрачено");
         latestScore.innerHTML = Math.floor(counter/10);
@@ -32,15 +33,15 @@ let isAlive = setInterval(function() {
         counter++;
         score.innerHTML = `Счет: ${Math.floor(counter/10)}`
     }
-}, 10)
+}, 10);
 
 btn.addEventListener("click", function(event) {
     stopGame();
-})
+});
 
 btn.addEventListener("keydown", function(event) {
     event.preventDefault();
-})
+});
 
 function stopGame() {
     if (cactus.classList == "move") {
@@ -55,3 +56,4 @@ function stopGame() {
         score.innerHTML = `Счет: ${Math.floor(counter/10)}`
     }
 }
+global.stopGame = stopGame;
