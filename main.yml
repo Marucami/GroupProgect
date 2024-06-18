@@ -4,17 +4,28 @@ on:
   push
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
    
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
-        with:
-          node-version: [20, 22]
-      - run: npm install
-      - run: npm run build
-      - run: npm test
-      - run: npm run lint
-      - run: npm run deploy
+      - name: Repos Cloning
+        uses: actions/checkout@v3
+      
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        
+      - name: Install denendencies
+        run: make install
+      
+      - name: Build Check
+        run: npm run build
+      
+      - name: Make test
+        run: make test
+      
+      - name: Make lint 
+        run: make lint
+      
+      - name: Deploy Check
+        run: npm run deploy
 
