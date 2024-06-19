@@ -9,4 +9,4 @@
 Figma - https://www.figma.com/design/NOobBTV9Wc6QIEYSvMt6vA/Untitled?node-id=18-2&t=dqFCoNaArLiqMEpw-1
 
 
-Таск Трекер - 
+Таск Трекер - https://docs.google.com/spreadsheets/d/1gqxs82qeBnZSxZjeOSHOzW2jJtg5UbvECbqL6muLvoY/edit?gid=0#gid=0

@@ -1,0 +1,116 @@
+nav a {
+	text-decoration: none;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+    
+}
+
+nav li {
+	font: 14px 'Handjet', sans-serif;
+    margin-left: 50px;
+    list-style-type: none;
+}
+
+
+.menu div {
+	display: flex;
+    flex-flow: column;
+    text-align: center;
+    padding-top: 17px;
+    margin: 27px;
+    border-radius: 30px;
+    background-color: #AB95EA;
+    width: 270px;
+    height: 80px;
+}
+
+#li1
+{
+    background-color: rgba(171, 149, 234, 1);
+    display: inline-block;
+}
+
+ #li2, #li3
+{
+    background: rgba(171, 149, 234, 0.7);
+    display: inline-block;
+}
+
+
+nav{
+    text-align: center;
+}
+
+
+
+
+.menu a {
+
+    font-size: 48px;
+	color: #CFA9FF;
+
+}
+
+#header_cat {
+    font-family: Handjet;
+    font-size: 130px;
+    color: #CFA9FF;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 90px;
+    letter-spacing: 3rem;
+
+}
+
+#header_psycho {
+    font-family: Handjet;
+    font-size: 130px;
+    color: #CFA9FF;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3rem;
+}
+
+
+
+.images {
+    width: 73px;
+    height: 71px;
+    transform: translateY(6px);
+    position: relative;
+    top: 20px;
+}
+
+
+
+body
+{
+    background: url("../cities/citi.png") no-repeat center center fixed;
+    background-color: #9668FF;
+    /* Обеспечиваем совместимость со старыми версиями браузеров */
+    -webkit-background-size: contain; /* Для Safari 3-4 */
+    -moz-background-size: contain;    /* Для старых версий Firefox */
+    -o-background-size: contain;      /* Для старых версий Opera */
+    
+    /* Стандартное свойство */
+    background-size: contain;         
+}
+
+
+
+@media (max-width: 1300px) {
+    body{
+        background: url("../Ppoto/citie.png") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }  
+   }
+
+
