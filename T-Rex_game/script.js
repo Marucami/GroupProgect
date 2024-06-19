@@ -19,7 +19,6 @@ function jump () {
         dino.classList.remove("jump");
     }, 500);
 }
-global.jump = jump; 
 
 let isAlive = setInterval(function() {
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
@@ -56,4 +55,3 @@ function stopGame() {
         score.innerHTML = `Счет: ${Math.floor(counter/10)}`
     }
 }
-global.stopGame = stopGame;
